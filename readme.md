@@ -8,7 +8,7 @@ Les visites dont la **durée est supérieure à 30 secondes** sont affichées en
 ---
 
 ##  Architecture
-
+```less
 [Simulateur Users] ---> [Kafka Topic: visits] ---> [Kafka Streams Filter]
                                                              |
                                                              v
@@ -16,6 +16,7 @@ Les visites dont la **durée est supérieure à 30 secondes** sont affichées en
                                                              |
                                                              v
                                                [Streamlit Dashboard]
+```
 
 ---
 
@@ -29,6 +30,7 @@ Les visites dont la **durée est supérieure à 30 secondes** sont affichées en
 
 ##  Arborescence du projet
 
+```bash
 kafka-streamlit-project/
 │── docker-compose.yml
 │── simulator/
@@ -37,7 +39,7 @@ kafka-streamlit-project/
 │   └── stream_app.py
 │── dashboard/
 │   └── app.py
-
+```
 
 ---
 
